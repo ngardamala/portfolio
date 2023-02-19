@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="main main--error" >
+        <h1>404 - Page Not Found</h1>
+        <p>
+            Oops! The page you're looking for cannot be found. The link you followed may be broken, or the page may have been removed or renamed. We apologize for the inconvenience. Please try one of the following options:
+            <ul>
+                <li>Check the URL for typos and try again</li>
+                <li>Use the navigation menu to find the page you're looking for</li>
+                <li>Contact our support team for assistance</li>
+            </ul>
+            In the meantime, you can explore our site to learn more about our products and services. Thank you for visiting!
+        </p>
+        <a href="{{ url_for('home') }}">Go to home</a>
+    </main>
+{% endblock  %}
